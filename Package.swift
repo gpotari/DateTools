@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "DateToolsSwift",
     platforms: [
-        .macOS(.v10_10), .iOS(.v8), .tvOS(.v9), .watchOS(.v2)
+        .macOS(.v10_10), .iOS(.v9), .tvOS(.v9), .watchOS(.v2)
     ],
     products: [
         .library(
@@ -17,8 +17,8 @@ let package = Package(
             name: "DateToolsSwift",
             path: "DateToolsSwift/DateTools",
             exclude: [
-                "Examples",
-                "DateToolsSwift/Examples"
+                "../../Examples",
+                "../../DateToolsSwift/Examples"
             ],
             resources: [
                 .copy("DateTools.bundle")
